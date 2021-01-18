@@ -1,0 +1,8 @@
+nome tabella User 
+
+id 		INT, PRIMARY KEY (=> AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX)
+nome		VARCHAR(50), NOT NULL
+cognome		VARCHAR(50), NOT NULL
+email		VARCHAR(50), NOT NULL
+foto_profilo	
+interessi 	VARCHAR(100), NULL
