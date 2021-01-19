@@ -1,11 +1,13 @@
 nome tabella User 
 
 id 		 	 INT, PRIMARY KEY (=> AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX)
-nome			 VARCHAR(50), NOT NULL, INDEX
-cognome		 	 VARCHAR(50), NOT NULL, INDEX
-email		 	 VARCHAR(50), NOT NULL
+nome			 VARCHAR(50), NOT NULL
+cognome		 	 VARCHAR(50), NOT NULL
+email	 	 	 VARCHAR(50), NOT NULL
+username		 VARCHAR(30), NOT NULL, UNIQUE
+password 		 VARCHAR(30), NOT NULL, UNIQUE
 foto_profilo	 	 VARCHAR(50), NULL
-eta			 VARCHAR(2), NULL
+data di nascita		 DATE, NULL
 interessi 		 VARCHAR(100), NULL
 città   	 	 VARCHAR(2), NOT NULL
 indirizzo 	 	 VARCHAR(30), NOT NULL
@@ -16,4 +18,4 @@ abbonamento	  	 TINYINT, DEFAULT(1) NOT NULL
 numero_carta 	  	 VARCHAR(30), NOT NULL
 ricevi_notifiche  	 TINYINT, DEFAULT(1) NULL
 abilita_commenti  	 TINYINT, DEFAULT(1) NULL
-		
+	

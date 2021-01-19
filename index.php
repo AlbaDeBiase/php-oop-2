@@ -34,15 +34,6 @@ class User {
         echo $this ->nome;
     }
 
-    public function setEmil($_email) {
-        if($_email > '5') {
-            $this->email = $_email;
-        } elseif($_email > '5') {
-            throw new Exception('email non è maggiore di 0!');
-        } else {
-            throw new Exception('email non valida!');
-        }
-    }
 
     public function printEmail(){
         echo $this ->email;
